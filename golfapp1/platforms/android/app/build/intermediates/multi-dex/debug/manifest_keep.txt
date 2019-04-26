@@ -1,0 +1,2 @@
+# Referenced at /home/socius/Desktop/golfapp/platforms/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:55
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }
