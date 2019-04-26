@@ -1,0 +1,20 @@
+<ion-header>
+</ion-header>
+
+<ion-content overflow-scroll="false" no-bounce class="content">
+    <img (click)="logOut()" style="
+    max-width: 7%;
+    margin-top: 11px;
+    right: 0;
+    margin-right: 13px;
+    position: absolute;"
+    src="../../assets/icon/logout.png">
+<img class="logo" src="../assets/icon/logo.png">
+      <ion-item>
+        <ion-input *ngIf="pbUrl == null"  class="inputBox" type="url" placeholder="URL(Address)" [(ngModel)]="url"></ion-input>
+        <ion-input *ngIf="pbUrl != null"  class="inputBox" type="url" value="{{pbUrl}}" [(ngModel)]="url"></ion-input>
+
+      </ion-item>
+      <button class="searchButton" ion-button  color="odoo" (click)="openWebpage(url)">접속</button>
+
+</ion-content>

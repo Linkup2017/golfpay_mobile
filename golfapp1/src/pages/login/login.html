@@ -1,0 +1,35 @@
+<ion-content padding class="content">
+    <form [formGroup]="authForm" >
+  <ion-list>
+
+      <div class="logo" >
+        <img center src="./assets/icon/logo.png">
+      </div>
+
+    <ion-item>
+      <ion-label floating>계정/이메일</ion-label>
+      <ion-input type="text" [(ngModel)]="username" [formControl]="authForm.controls['username']" [ngClass]="{'error-border':!authForm.controls['username'].valid}"></ion-input>
+    </ion-item>
+    <div class="error-box" *ngIf="authForm.controls['username'].hasError('required') && authForm.controls['username'].touched">* 계정을 입력하세요!</div>
+    <ion-item>
+      <ion-label floating>비밀번호</ion-label>
+      <ion-input type="password" [(ngModel)]="password" [formControl]="authForm.controls['password']"></ion-input>
+    </ion-item>
+    <div></div>
+    <div class="error-box" *ngIf="authForm.controls['password'].hasError('required') && authForm.controls['password'].touched">* 비밀번호를 입력하세요!</div>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button style="background-color: #3e497f;" block (click)=login(username,password) [disabled]="!authForm.valid">로그인</button>
+  </div>
+  </form>
+  <ion-item>
+    <ion-label style="color: #3e497f!important;">R비밀번호 기억?</ion-label>
+    <ion-toggle  color="odoo" [(ngModel)]="rememberPass"></ion-toggle>
+  </ion-item>
+
+  <div padding class="center">
+    <a (click)=apiChange($event)><ion-icon name="logo-buffer"></ion-icon>설정</a>
+  </div>
+</ion-content>

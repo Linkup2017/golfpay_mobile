@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "964030697866",
+    "firebase_url": "https://golf-pay.firebaseio.com",
+    "project_id": "golf-pay",
+    "storage_bucket": "golf-pay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964030697866:android:c6768072637ff599",
+        "android_client_info": {
+          "package_name": "com.golf.pay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964030697866-b0hfmv48ikin49f50hut8f4enog056e5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKoprNx7rQ_6vigaL3jwYYd-KCiWyew-8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
