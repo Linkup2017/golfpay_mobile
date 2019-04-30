@@ -22,6 +22,7 @@ export class LoginPage {
   regId: any;
   public apiData: string;
   dbData: string = 'demo';
+  endPoint: string = '/firebase/registeration';
   dismissing: boolean;
   spamming: boolean;
   lastBack: any;
@@ -139,10 +140,6 @@ export class LoginPage {
     prompt.present();
   }
 
-  notify(event: any) {
-    alert("toggled: "+event.target.checked);
-   }
-
 
   login(username, password) {
     const options: PushOptions = {
@@ -170,16 +167,17 @@ export class LoginPage {
       let headers = {
         'Content-Type': 'application/json'
       };
-      var newVal = this.apiData;
-      this.http.post(`${newVal}`, val, headers)
+      this.http.post(`${this.apiData}${this.endPoint}`, val, headers)
         .then(data => {
           if(data.data == 1){
             if(this.rememberPass == true){
               this.storage.ready().then(() => {
                 this.storage.set('usrname', username);
+                this.storage.set('api', this.apiData);
               });
             }
           this.navCtrl.setRoot(HomePage);
+
           }
           else if (data.data == 0){
             alert("Invalid Credentials!")

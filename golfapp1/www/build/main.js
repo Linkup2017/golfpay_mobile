@@ -51,6 +51,7 @@ var LoginPage = /** @class */ (function () {
         this.toast = toast;
         this.check = true;
         this.dbData = 'demo';
+        this.endPoint = '/firebase/registeration';
         this.rememberPass = false;
         platform.ready().then(function () {
             if (platform.is('android')) {
@@ -140,9 +141,6 @@ var LoginPage = /** @class */ (function () {
         });
         prompt.present();
     };
-    LoginPage.prototype.notify = function (event) {
-        alert("toggled: " + event.target.checked);
-    };
     LoginPage.prototype.login = function (username, password) {
         var _this = this;
         var options = {
@@ -168,13 +166,13 @@ var LoginPage = /** @class */ (function () {
             var headers = {
                 'Content-Type': 'application/json'
             };
-            var newVal = _this.apiData;
-            _this.http.post("" + newVal, val, headers)
+            _this.http.post("" + _this.apiData + _this.endPoint, val, headers)
                 .then(function (data) {
                 if (data.data == 1) {
                     if (_this.rememberPass == true) {
                         _this.storage.ready().then(function () {
                             _this.storage.set('usrname', username);
+                            _this.storage.set('api', _this.apiData);
                         });
                     }
                     _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]);
@@ -284,8 +282,9 @@ var HomePage = /** @class */ (function () {
         this.storage = storage;
         this.toast = toast;
         this.count = 0;
-        this.storage.get('name').then(function (name) {
-            _this.pbUrl = name;
+        this.url = this.navParams.get("searchUrl");
+        this.storage.get('api').then(function (api) {
+            _this.pbUrl = api;
         });
         platform.ready().then(function () {
             if (platform.is('android')) {
@@ -380,23 +379,19 @@ var HomePage = /** @class */ (function () {
         pushObject.on('error').subscribe(function (error) { return console.error('Error with Push plugin', error); });
     };
     // Search Webpages
-    HomePage.prototype.openWebpage = function (url) {
-        var _this = this;
+    HomePage.prototype.openWebpage = function () {
         var options = {
             hideurlbar: 'no',
             location: 'no',
             hardwareback: 'yes',
             zoom: 'yes'
         };
-        var newUrl = 'http://' + url;
+        var newUrl = this.pbUrl;
         var browser = this.iab.create(newUrl, '_self', options);
-        this.storage.ready().then(function () {
-            _this.storage.set('name', url);
-        });
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/socius/Desktop/golfapp/src/pages/home/home.html"*/'<ion-header>\n</ion-header>\n\n<ion-content overflow-scroll="false" no-bounce class="content">\n    <img (click)="logOut()" style="\n    max-width: 7%;\n    margin-top: 11px;\n    right: 0;\n    margin-right: 13px;\n    position: absolute;"\n    src="../../assets/icon/logout.png">\n<img class="logo" src="../assets/icon/logo.png">\n      <ion-item>\n        <ion-input *ngIf="pbUrl == null"  class="inputBox" type="url" placeholder="URL(Address)" [(ngModel)]="url"></ion-input>\n        <ion-input *ngIf="pbUrl != null"  class="inputBox" type="url" value="{{pbUrl}}" [(ngModel)]="url"></ion-input>\n\n      </ion-item>\n      <button class="searchButton" ion-button  color="odoo" (click)="openWebpage(url)">접속</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/socius/Desktop/golfapp/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/socius/Desktop/golfapp/src/pages/home/home.html"*/'<ion-header>\n</ion-header>\n\n<ion-content overflow-scroll="false" no-bounce class="content">\n    <img (click)="logOut()" style="\n    max-width: 7%;\n    margin-top: 11px;\n    right: 0;\n    margin-right: 13px;\n    position: absolute;"\n    src="../../assets/icon/logout.png">\n<img class="logo" src="../assets/icon/logo.png">\n      <!-- <ion-item>\n        <ion-input *ngIf="pbUrl == null"  class="inputBox" type="url" placeholder="URL(Address)" [(ngModel)]="url"></ion-input>\n        <ion-input *ngIf="pbUrl != null"  class="inputBox" type="url" value="{{pbUrl}}" [(ngModel)]="url"></ion-input>\n\n      </ion-item> -->\n      <button class="searchButton" ion-button  color="odoo" (click)="openWebpage()">접속</button>\n\n</ion-content>\n'/*ion-inline-end:"/home/socius/Desktop/golfapp/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* App */],

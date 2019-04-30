@@ -1,6 +1,6 @@
 {
   "name": "golfplay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Socius",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -28,7 +28,7 @@
     "@ionic-native/splash-screen": "~4.18.0",
     "@ionic-native/status-bar": "~4.18.0",
     "@ionic/storage": "^2.2.0",
-    "cordova-android": "7.1.4",
+    "cordova-android": "^8.0.0",
     "cordova-plugin-advanced-http": "2.0.9",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-file": "6.0.1",

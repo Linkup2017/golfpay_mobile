@@ -4,24 +4,7 @@
             "outputFile": "/home/socius/Desktop/golfapp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/9ca8226d880908b7826c754acbe8e0e1/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "206",
-                        "endOffsets": "491"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "206",
-                        "endOffsets": "307"
-                    }
-                },
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7069fc405e4df3ec33180b69d3db5d95/res/values-sv/values-sv.xml",
+                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e789afea2c301c4efc5d18e69bd9df85/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,85 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/c09892b745e2cbff9d8b0b3db1a7b881/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "243",
-                        "endColumns": "101",
-                        "endOffsets": "344"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "312",
-                        "endColumns": "105",
-                        "endOffsets": "413"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/admin35/Desktop/golfapp_4/golfapp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
-            "map": [
-                {
-                    "source": "/home/admin35/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/24aa52832a5284e92385048628bbf9c0/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "243",
-                        "endColumns": "101",
-                        "endOffsets": "344"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "312",
-                        "endColumns": "105",
-                        "endOffsets": "413"
-                    }
-                },
-                {
-                    "source": "/home/admin35/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/8583086fefd2070b222d9a94852f6ee7/res/values-sv/values-sv.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "418",
-                        "endColumns": "100",
-                        "endOffsets": "514"
-                    }
-                },
-                {
-                    "source": "/home/admin35/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/732f5f7787cb5294964bb0dbc580a006/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "206",
-                        "endOffsets": "491"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "206",
-                        "endOffsets": "307"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/socius/Desktop/Work/Golf/golfapp_release/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
-            "map": [
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/9ca8226d880908b7826c754acbe8e0e1/res/values-sv/values.xml",
+                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/9022570d1913dc82b793ea70b2c0d5b1/res/values-sv/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -133,80 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7069fc405e4df3ec33180b69d3db5d95/res/values-sv/values-sv.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "418",
-                        "endColumns": "100",
-                        "endOffsets": "514"
-                    }
-                },
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/c09892b745e2cbff9d8b0b3db1a7b881/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "243",
-                        "endColumns": "101",
-                        "endOffsets": "344"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "312",
-                        "endColumns": "105",
-                        "endOffsets": "413"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/socius/Desktop/golfplay/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
-            "map": [
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/9ca8226d880908b7826c754acbe8e0e1/res/values-sv/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "206",
-                        "endOffsets": "491"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "105",
-                        "endColumns": "206",
-                        "endOffsets": "307"
-                    }
-                },
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7069fc405e4df3ec33180b69d3db5d95/res/values-sv/values-sv.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "418",
-                        "endColumns": "100",
-                        "endOffsets": "514"
-                    }
-                },
-                {
-                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/c09892b745e2cbff9d8b0b3db1a7b881/res/values-sv/values.xml",
+                    "source": "/home/socius/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/6fd758aac71762c444819663e09bb338/res/values-sv/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

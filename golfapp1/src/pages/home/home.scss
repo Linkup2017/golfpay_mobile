@@ -4,15 +4,20 @@ page-home {
         background-image: url(../assets/imgs/bg.png);
         text-align: center;
         background-repeat: no-repeat;
-        background-size: cover;   
+        background-size: cover;
  }
 
         .logo{
             height: 120px;
-            margin: 6em 0 3.5em 0;
-        }
+            height: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 100px;
+            margin-bottom: 26px;
+     }
 
-   
+
     .item-md.item-block .item-inner {
         padding-right: 8px;
         border-bottom: none;
@@ -27,14 +32,17 @@ page-home {
     }
 
     .searchButton{
-        margin-top: 2em;
-        padding: 0 25px 0 25px;
-    }
+      margin-top: 6em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: 0px 30px 0 30px;
+          }
 
     .invalid{
         border-bottom: 1px solid rgba(255, 0, 0, 0.71);
       }
-    
+
       .item-md.item-block .item-inner {
         padding-right: 0px !important;
         border-bottom: #fff !important;
@@ -43,9 +51,9 @@ page-home {
       .item-md.item-input.input-has-focus .item-inner {
 
         box-shadow: none;
-        
+
         border-bottom: none;
-        
+
         }
 
 }

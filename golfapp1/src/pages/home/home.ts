@@ -21,6 +21,8 @@ export class HomePage {
   lastBack: any;
   username: string;
 
+
+
   constructor(
     public nav: Nav,
     public app: App,
@@ -36,8 +38,10 @@ export class HomePage {
     public toast: ToastController
   ) {
 
-    this.storage.get('name').then((name) => {
-      this.pbUrl = name;
+    this.url = this.navParams.get("searchUrl");
+
+    this.storage.get('api').then((api) => {
+      this.pbUrl = api;
     });
 
 
@@ -155,7 +159,7 @@ export class HomePage {
 
 
 
-  openWebpage(url) {
+  openWebpage() {
 
     const options: InAppBrowserOptions = {
 
@@ -165,12 +169,9 @@ export class HomePage {
       zoom: 'yes'
     }
 
-    let newUrl = 'http://' + url;
+    let newUrl = this.pbUrl;
     const browser = this.iab.create(newUrl, '_self', options);
 
-    this.storage.ready().then(() => {
-      this.storage.set('name', url);
-    });
 
 
   }

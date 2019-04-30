@@ -28003,7 +28003,12 @@ page-home .content {
 
 page-home .logo {
   height: 120px;
-  margin: 6em 0 3.5em 0;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 26px;
 }
 
 page-home .item-md.item-block .item-inner {
@@ -28020,8 +28025,11 @@ page-home .inputBox {
 }
 
 page-home .searchButton {
-  margin-top: 2em;
-  padding: 0 25px 0 25px;
+  margin-top: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0px 30px 0 30px;
 }
 
 page-home .invalid {
